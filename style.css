@@ -19,11 +19,12 @@ body{
     box-sizing: border-box;
     background-color: #000;
     color: #fff;
+    width: 100vw;
 }
 
 header{
     padding: 5px 5%;
-    box-shadow: 0 0 5px 1px var(--cor-terciaria);
+    width: 100vw;
 }
 
 .interface{
@@ -102,7 +103,7 @@ header nav ul li {
 }
 
 .txt__do__site h1{
-    color: var(--cor-secundaria);
+    color: var(--cor-hover);
     font-size: 42px;
     line-height: 40px;
 }
@@ -116,30 +117,150 @@ header nav ul li {
 }
 
 .apresentacao__imagem{
-    width: 50%;
+    width: 30%;
+    box-shadow: 0px 0px 2px 4px var(--cor-hover); 
+    transition: box-shadow 0.6s ease; 
 }
 
-/*Projetos*/
-.portfolio-container{
+.apresentacao__imagem__skills{
+    width: 40%;
+}
+
+/*Estilo Projetos*/
+
+
+.container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    gap: 100px 50px;
+    padding: 100px 50px;
 }
 
-.projetos{
-    width: 30%;
-    background-color: var(--cor-secundaria);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0, 4px 8px rgb(0, 0, 0, 0.1);
+.container .custom-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 340px;
+    max-width: 100%;
+    height: 300px;
+    background: var(--cor-secundaria);
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
-.projetos h2{
-    margin-top: 0;
+.container .custom-card:hover {
+    height: 375px;
 }
-.projetos p{
-    margin-bottom: 0;
+
+.container .custom-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: var(--cor-primaria);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
 }
+
+.container .custom-card:hover .img-box{
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .custom-card .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .custom-card .custom-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.container .custom-card:hover .custom-content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .custom-card .custom-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-hover);
+}
+
+.container .custom-card .custom-content p {
+    color: var(--cor-primaria);
+}
+
+.container .custom-card .custom-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--cor-hover);
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.container .custom-card .custom-content a:hover{
+    opacity: .8;
+}
+
+/*Estilo do footer*/
+/* footer */
+
+.rodape {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 20px var(--cinza--escuro);
+}
+
+.rodape .logos {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rodape .logos a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.logos .logo__alura {
+    width: 60%;
+}
+
+.rodape p {
+    color: var(--branco);
+    font-size: small;
+    text-align: center;
+    margin: 15px 0 0 15px;
+    margin: auto;
+}
+
+
