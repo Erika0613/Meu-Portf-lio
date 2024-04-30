@@ -24,7 +24,6 @@ body{
 
 header{
     padding: 5px 5%;
-    width: 100vw;
 }
 
 .interface{
@@ -127,8 +126,6 @@ header nav ul li {
 }
 
 /*Estilo Projetos*/
-
-
 .container {
     position: relative;
     display: flex;
@@ -227,14 +224,11 @@ header nav ul li {
 }
 
 /*Estilo do footer*/
-/* footer */
-
 .rodape {
     position: relative;
     width: 100%;
     min-height: 100px;
     padding: 20px 50px;
-    box-shadow: 0px 0px 20px var(--cinza--escuro);
 }
 
 .rodape .logos {
@@ -262,5 +256,3 @@ header nav ul li {
     margin: 15px 0 0 15px;
     margin: auto;
 }
-
-
