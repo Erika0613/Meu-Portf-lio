@@ -1,0 +1,15 @@
+@media screen and (max-width: 1020px) {
+    .menu-desktop, interface{
+      
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+}
