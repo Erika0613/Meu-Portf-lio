@@ -130,6 +130,7 @@ header nav ul li {
 
 /*Estilo Projetos*/
 .container {
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -227,29 +228,21 @@ header nav ul li {
 }
 
 /*Estilo do footer*/
+
 .rodape {
-    min-height: 100px;
-}
-
-.rodape .logos {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.rodape .logos a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.logos .logo__alura {
-    width: 60%;
-}
-
-.rodape p {
-    color: var(--branco);
-    font-size: small;
+    padding: 24px;
+    color: var(--cor-secundaria);
     text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.rodape__texto {
+    margin-top: 10px;
+}
+
+.imagem__rodape {
+    width: 30%;
 }
